@@ -1,0 +1,2 @@
+java ColouredAttributeTool
+PAUSE

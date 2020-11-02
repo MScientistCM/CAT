@@ -1,0 +1,32 @@
+Copyright (C) 2020  John Locke
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+1) This tool requires Java in order to run, you can download this here: https://java.com/en/download/
+
+2) [optional]
+Open config.txt and change the 'directory' value from "C:" to the location of your CM exe file - the tool will the show this directory when asking for your CM exe.  DO NOT edit the offset value unless you know what you're doing - see below.
+
+3) Make sure you've got a backup of your CM exe file.
+
+4) Open colours.txt, for each attribute value (on the left) you need to enter a colour (to the right of the '=').  You can use either hexadecimal RGB values, e.g. FF0000 (Red), or you can use a colour name from the file x11.txt.  You can see what these colours look like here: https://en.wikipedia.org/wiki/X11_color_names.  If you don't want to edit all colours, then you can remove lines from colours.txt - or add "//" at the start of a line.  [You can add / remove colours to x11.txt if you want, just make sure you keep the same format]
+
+5) Double-click Run.bat, pick your exe and the new colours will be applied.
+
+6) Done.
+
+If the colours aren't applied, try moving you exe to a different location (e.g. your Desktop) as Windows might be protecting the file.
+
+[For those that play versions other than 3.9.68 only]
+If you've managed to apply coloured attributes to an earlier version of the game then the offset value in config.txt can be edited to allow this tool to change those colours - just change it to the offset 2 bytes before the colour value for the attribute value of 1.  The tool will just apply the colours to the location [offset + (attribute * 2)].

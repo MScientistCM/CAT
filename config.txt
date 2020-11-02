@@ -1,0 +1,2 @@
+directory = C:
+offset = 0x5660F6
